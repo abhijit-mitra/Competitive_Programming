@@ -29,10 +29,10 @@ def get_bitonic_arr(arr):
         dec_count += 1
         dec[j] = dec_count
 
-        if (i < (size-1)) and not arr[i] < arr[i+1]:
+        if (i < (size-1)) and arr[i] > arr[i+1]:
             inc_count = 0
 
-        if (i < (size-1)) and not arr[j] < arr[j-1]:
+        if (i < (size-1)) and arr[j] > arr[j-1]:
             dec_count = 0
 
     print(inc)
