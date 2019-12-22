@@ -1,4 +1,4 @@
-/*
+`
 Count minimum steps to get the given desired array. Following are the mentioned operations you can use
 1/ Incremental Operation: You can increment value by 1 of only one 1 element at a time .
 2/ Doubling opertaion: You can double the value all the elements in 1 step.
@@ -15,7 +15,7 @@ Technique:
 2/ if all are even divide all elements by 2 and inc result by 1.
 3/ Find all odd elements, make them even by reducing 1 and for every reduction inc result by 1.
 4/ Finally we will get all zeros in target array.
-*/
+`
 
 const arr1 = [16,16,16];
 const arr2 = [2,4];

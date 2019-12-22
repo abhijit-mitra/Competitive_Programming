@@ -1,10 +1,10 @@
-/*
+`
 Move all zeros at the end of the array.
 Given an array of random numbers, push all zeros at the end.
 
 Input: [1,9.8,4,0,0,2,7,0,6,0]
 Output: [1,9,8,4,2,7,6,0,0,0,0]
-*/
+`
 
 
 const get_new_arr = (arr) =>{
