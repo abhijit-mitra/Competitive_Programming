@@ -18,7 +18,8 @@ function getNumWays(n){
   for(let i=2;i<=n;i++){
     arr[i] = arr[i-1] + arr [i-2];
   }
-  return arr.length;
+  console.log(arr);
+  return arr[n];
 }
 
 console.log(getNumWays(6));
