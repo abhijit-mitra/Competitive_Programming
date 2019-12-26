@@ -50,16 +50,15 @@ I = {name: "I"}; J = {name: "J"};
 H = {name: "H", left: I, right: J};
 G = {name: "G", left: H};
 
-object = {name: "object", left: A, right: G};
-Root = object;
+Object = {name: "object", left: A, right: G};
+Root = Object;
 
 // Function sig
 var executed={};
 
 function getResult(store){
   const obj = {};
-  const n_store = {...store};
-  const entries = Object.entries(n_store);
+  const entries = Object.entries(store);
   const total_keys = entries.length;
   for(let [key, value] of entries){
     for(let j= value.length -1 ; j>=0; j--){
