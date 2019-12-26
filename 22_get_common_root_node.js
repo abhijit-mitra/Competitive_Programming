@@ -50,8 +50,8 @@ I = {name: "I"}; J = {name: "J"};
 H = {name: "H", left: I, right: J};
 G = {name: "G", left: H};
 
-Object = {name: "object", left: A, right: G};
-Root = Object;
+object = {name: "object", left: A, right: G};
+Root = object;
 
 // Function sig
 var executed={};
