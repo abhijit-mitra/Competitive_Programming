@@ -145,20 +145,6 @@ class BST {
           return right + 1;
       };
   }
-  inOrder() {
-    if (this.root == null) {
-      return null;
-    } else {
-      var result = new Array();
-      function traverseInOrder(node) {
-        node.left && traverseInOrder(node.left);
-        result.push(node.data);
-        node.right && traverseInOrder(node.right);
-      }
-      traverseInOrder(this.root);
-      return result;
-    };
-  }
   preOrder() {
     if (this.root == null) {
       return null;
@@ -170,6 +156,20 @@ class BST {
         node.right && traversePreOrder(node.right);
       };
       traversePreOrder(this.root);
+      return result;
+    };
+  }
+  inOrder() {
+    if (this.root == null) {
+      return null;
+    } else {
+      var result = new Array();
+      function traverseInOrder(node) {
+        node.left && traverseInOrder(node.left);
+        result.push(node.data);
+        node.right && traverseInOrder(node.right);
+      }
+      traverseInOrder(this.root);
       return result;
     };
   }
@@ -231,8 +231,22 @@ bst.add(10);
 console.log(bst.findMinHeight());
 console.log(bst.findMaxHeight());
 console.log(bst.isBalanced());
+
+console.log('preOrder: DFS ' + bst.preOrder());
 console.log('inOrder: ' + bst.inOrder());
-console.log('preOrder: ' + bst.preOrder());
 console.log('postOrder: ' + bst.postOrder());
 
-console.log('levelOrder: ' + bst.levelOrder());
+console.log('levelOrder: BFS ' + bst.levelOrder());
+
+`
+                          9
+                    4             17
+                3       6     10       22
+                      5   7        20
+
+1/ Preorder: root, left, right : 9, 4, 3, 6, 5, 7, 17, 10, 22, 20
+2/ Inorder: left, root, right: 3, 4, 5, 6, 7, 9, 10, 17, 20, 22
+3/ postOrder: left, right, root: 3, 5, 7, 6, 4, 10, 20, 22, 17, 9
+4/ levelOrder: 9,4,17,3,6,10,22,5,7,20
+
+`
