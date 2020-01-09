@@ -7,12 +7,14 @@ function incX(x,y, break_inc_x) {
   return [x, y, break_inc_x];
 }
 function incY(x,y, break_inc_y) {
+  let _break = true;
   while(y<break_inc_y){
+    _break = false;
     console.log(`row_no=${y}, col_no=${x}`);
     y++
   };
   break_inc_y--;
-  return [x, y, break_inc_y];
+  return [x, y, break_inc_y, _break];
 }
 function decX(x,y, break_dec_x) {
   while(x>break_dec_x){
@@ -39,11 +41,9 @@ function spl_print(arr){
   let i=0;
   while(i<req_itereations){
       [x,y,break_inc_x] = incX(x,y,break_inc_x);
-      [x,y,break_inc_y] = incY(x,y,break_inc_y);
-      if(break_inc_y>(row<col?-1:0)){
+      [x,y,break_inc_y, _break] = incY(x,y,break_inc_y);
+      if(!_break){
         [x,y,break_dec_x] = decX(x,y,break_dec_x, break_dec_y);
-      }
-      if(break_inc_x>(row>col?-1:0)){
         [x,y,break_dec_y] = decY(x,y,break_dec_y, break_inc_x);
       }
       i++;
@@ -55,5 +55,5 @@ function spl_print(arr){
 // spl_print([[1,1,1,1,1]]);
 // spl_print([[1],[1],[1],[1],[1]]);
 // spl_print([[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]);
-// spl_print([[1,1],[1,1],[1,1]]);
-spl_print([[1,1,1],[1,1,1]]);
+spl_print([[1,1],[1,1],[1,1]]);
+// spl_print([[1,1,1],[1,1,1]]);
