@@ -6,6 +6,7 @@ function throttling(fun, delay) {
     if(execute){
       execute = false;
       setTimeOut(()=>{
+        execute = true;
         return fun.apply(context, args);
       }, delay)
     }
