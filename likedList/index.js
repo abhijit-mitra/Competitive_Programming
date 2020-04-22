@@ -34,7 +34,5 @@ const list = new LinkedList();
 list.append('A');
 list.append('B');
 list.append('C');
-console.log(list);
-console.log(list.print());
 
-module.exports = LinkedList;
+module.exports = new LinkedList();

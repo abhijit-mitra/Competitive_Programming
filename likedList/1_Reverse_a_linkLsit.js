@@ -1,21 +1,11 @@
-let list={
-  head:{
-    value:1,
-    next:{
-    value:2,
-    next: {
-      value:3,
-      next:{
-        value: 4,
-        next:null
-      }
-    }
-  },
-}
-}
+const LinkedList = require('./index.js');
+
+LinkedList.append('A');
+LinkedList.append('B');
+LinkedList.append('C');
 
 let prev_node = null;
-let current_node = list.head;
+let current_node = LinkedList.head;
 
 while(current_node){
   temp = current_node;
@@ -23,5 +13,6 @@ while(current_node){
   temp.next = prev_node;
   prev_node = temp;
 }
+LinkedList.head = prev_node;
 
-console.log(list);
+console.log(LinkedList.print());

@@ -1,27 +1,17 @@
-let list={
-  head:{
-    value:1,
-    next:{
-    value:2,
-    next: {
-      value:3,
-      next:{
-        value: 4,
-        next:null
-      }
-    }
-  },
-}
-}
+const LinkedList = require('./index.js');
+
+LinkedList.append('A');
+LinkedList.append('B');
+LinkedList.append('C');
 
 
-let current_node = list.head;
+let current_node = LinkedList.head;
 let length = 0;
 
-while(current_node && current_node.next){
+while(current_node){
   length++;
   current_node = current_node.next;
 }
 
 console.log('length of list',length);
-console.log('list', list);
+console.log('list', LinkedList);
