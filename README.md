@@ -1,4 +1,4 @@
-This module contains below things in Written in JavaScript and Python.
+This module contains below things Written in JavaScript and Python.
 Come fall in love with Programming.
 
 ## Competitive_Programming
@@ -8,5 +8,3 @@ Come fall in love with Programming.
 ## Dynamic Programming
 ## ES 2020
 ## JavaScript Utils
-
-Competitive Programming with Python and JavaScript
