@@ -22,10 +22,12 @@ def segregate_arr(arr):
             else:
                 arr[left] = 0
                 arr[right] = 1
+                left += 1
+                right -=1
     return arr
 
 
 if __name__ == '__main__':
-    arr = [0, 1, 0, 1, 1]
+    arr = [0, 1, 0, 0, 0, 0, 1, 1]
     res = segregate_arr(arr)
     print(res)
