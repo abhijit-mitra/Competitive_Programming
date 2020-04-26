@@ -26,17 +26,17 @@ const getMinStepsCount = (arr) =>{
   let steps = 0;
   let new_arr = [...arr];
 
-  while(new_arr.find((elm)=>(elm>0))){
-    let execute = true;
+  while(new_arr.find((elm)=>(elm!==0))){// while all elements are not zero
+    let inc_steps_for_even = true;
     for(let i=0;i<size;i++){
-      if(!new_arr[i]){
+      if(!new_arr[i]){ // if zero
         continue;
       }
-      if(new_arr[i]%2==0){
+      if(new_arr[i]%2==0){ // if even
         new_arr[i] = new_arr[i]/2;
-          if(execute){
+          if(inc_steps_for_even){
             steps++;
-            execute = false;
+            inc_steps_for_even = false;
           }
       }else{
         new_arr[i] = new_arr[i] -1;
@@ -47,6 +47,6 @@ const getMinStepsCount = (arr) =>{
   console.log(steps);
 }
 
-getMinStepsCount(arr1);
-getMinStepsCount(arr2);
-getMinStepsCount(arr3);
+getMinStepsCount(arr1); //7
+getMinStepsCount(arr2); //4
+getMinStepsCount(arr3); //3

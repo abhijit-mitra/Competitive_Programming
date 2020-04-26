@@ -8,7 +8,6 @@ Output: [1,9,8,4,2,7,6,0,0,0,0]
 
 
 const get_new_arr = (arr) =>{
-  let zero_cnt = 0;
   let j=0;
   for(let i=0;i<arr.length;i++){
       if (arr[i]){
@@ -26,4 +25,28 @@ const get_new_arr = (arr) =>{
 
 }
 
-get_new_arr([1,9,8,4,0,0,2,7,0,6,0]);
+//get_new_arr([1,9,8,4,0,0,2,7,0,6,0]);
+
+// with two pointers
+
+function get_resultant_err(arr){
+  let i=0;
+  let j=0;
+  let size = arr.length
+  while(i<size && j<size){
+    if(arr[i]){
+      i++;
+      j=i;
+    }else{
+      j++;
+      if(arr[j]){
+        arr[i] = arr[j];
+        arr[j] = 0;
+      }
+    }
+  };
+  console.log(arr);
+  return arr;
+}
+
+get_resultant_err([1,9,8,4,0,0,2,7,0,6,0]);
