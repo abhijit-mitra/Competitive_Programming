@@ -8,7 +8,7 @@ function connect(mapStateToProps, mapDispatchToProps){
           const state = store.getState()
           this.requiredStates = mapStateToProps(state, props)
         }
-        if(typeof(mapDispatchToProps) === 'object'){
+        if(typeof(mapDispatchToProps) === 'object' && mapDispatchToProps.constructor === Array){
           const dispatch = store.dispatch;
           this.actions = Object.entries(mapDispatchToProps).reduce((acc, [key, value])=>{
             acc[key] = function(){
@@ -19,7 +19,7 @@ function connect(mapStateToProps, mapDispatchToProps){
         }
       }
       render(){
-        return < Component {...this.props} {...this.requiredStates} {...this.actions}/>
+        return <Component {...this.props} {...this.requiredStates} {...this.actions}/>
       }
 
     }

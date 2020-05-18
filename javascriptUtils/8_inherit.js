@@ -4,6 +4,7 @@ var Car = function(){
   }
   function Car(name){
     this.name = name;
+    this.wheels = 4;
   }
   return Car;
 }();
