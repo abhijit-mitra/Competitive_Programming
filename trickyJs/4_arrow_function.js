@@ -4,4 +4,4 @@ let obj = {
     return this.name
   }
 };
-console.log(obj.getName());
+console.log(obj.getName()); // undefined
