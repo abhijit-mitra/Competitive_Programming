@@ -11,6 +11,27 @@ function x(){
 x();
 console.log(test); // Output: 1
 
+/*
+JS parsing:
+  Stage 1 called Compilation phase:
+    test=undefined;
+    x=[function];
+    x(); will not execute in compilation phase
+    console.log(); will not execute in compilation phase
+
+  Stage 2 called Execution phase:
+  test=1;
+
+  x called:
+    Compilation:
+      test = [function]
+
+    Execution:
+      test = 100; Updated the test value from function to 100
+      after that return from function
+*/
+
+
 
 //Very Important
 var test2 = 1;
