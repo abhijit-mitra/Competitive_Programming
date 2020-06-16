@@ -1,6 +1,6 @@
 var test5={
   name:'',
-  getName: function(name){
+  setName: function(name){
     function setName(){
       this.name = name;
     }
