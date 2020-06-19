@@ -1,0 +1,17 @@
+{
+  "name": "scaling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "4_database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-localstorage": "^2.1.6"
+  },
+  "devDependencies": {
+    "loadtest": "^5.0.4"
+  }
+}
