@@ -1,4 +1,15 @@
 ## DOCS:
+
+## Scaling Fundamentals
+
+### `Scale by Cloning services`
+
+### `Scale by sharding databases`
+
+### `Scale by using Microservices`
+
+
+
 ### loadtest: https://www.npmjs.com/package/loadtest
 
 ## PM2 Commands
@@ -20,7 +31,6 @@ To delete all process
 
 To stop a process
 ### `pm2 delete process_name`
-
 
 
 
