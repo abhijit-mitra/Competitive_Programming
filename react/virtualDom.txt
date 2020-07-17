@@ -1,0 +1,6 @@
+1/ Once component rendered VD1 got created.
+2/ On any update through, setState, getDerivedStateFromProps, forceUpdate, react will make these components dirty.
+3/ Compare VD1 and VD2---> will compare only dirty components
+4/ This process is called recoincillation. React checks for each domNode and it's value. If there is any change then react updates the particular domNode. Considering below two points:
+5/ Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.
+6/Diffing of lists is performed using keys. Keys should be "stable, predictable, and unique."

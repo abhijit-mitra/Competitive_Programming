@@ -42,8 +42,8 @@ function test2(){
   function test2(){};
 };
 
-test2();
-console.log(test2); // Output: Error test2 is not a function
+test2(); // Output: Error test2 is not a function
+console.log(test2); // 1
 
 /*
 JS parsing:
