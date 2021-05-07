@@ -1,0 +1,5 @@
+1/ How to implement Browser Caching --> ETag, if-non-match
+2/ What is DB Connection pooling
+3/ How to implement Image Caching
+4/ What is Cache Bursting
+5/ Virtual DOM in react

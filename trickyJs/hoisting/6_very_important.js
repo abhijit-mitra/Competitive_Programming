@@ -24,10 +24,12 @@ JS parsing:
 
   x called:
     Compilation:
-      test = [function]
+      global test =1;
+      local test = [function]
 
     Execution:
-      test = 100; Updated the test value from function to 100
+      local test = 100; Updated the test value from function to 100
+      till this time global test is still 1;
       after that return from function
 */
 

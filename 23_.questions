@@ -1,0 +1,63 @@
+Algo Questions:
+1/ 2nd round - leetcode (merge k lists) (find an element in a sorted 2d matrix) ---> Done
+2/ Binary Tree is BST or not
+3/ Given an array and list of queries that contains and starting and end indexes we have to find the sum of arrays from staring to end indexes and add it to the list for each query.
+eg.
+arr[] ={1,2,5,8,9,10} , and queries = List<List<Integer>> queries= [[2,5],[3,5]];
+output=list<Integer> =[32,27]
+explanation = for first query add sum from index 2 to 5 and for second query = sum from index 3 to 5
+
+
+
+---------- SYSTEM DESIGN QUESTIONS -----------
+
+Design ATM System
+
+Design Bookmyshow application, mostly how you define the class structure
+
+http/https diff , parrallesim and concurrency difference
+
+design vehicle parking system.
+
+There are some villages near a city in India that have yet to be connected to the city via road. Some villages are connected to each other via road and some aren’t. A village is said to be connected to the city if one can travel from that village to the city via any road.
+The cost of making a road between a city and a village and that of between a village and another village is the same and equal to 1 unit.
+Find the minimum cost the government must bear in order to connect all the villages to the city.
+Input: N: number of villages.
+Matrix: M[N+1][N+1] where 0 to N-1 indexes represents a village and the Nth index represents a city. M[x][y] = M[y][x] = 1 if there is a road between x and y.
+
+Design a Vehicle Parking System for a mall.
+
+How to find new element in a complete binary tree
+
+
+//JS Qsn//
+1)How JS works
+2)How HTML CSS JS works while rendering
+3)Arrow Functions uses and disadvantages
+4)Questions on Virtual DOM and Real DOM in react
+5)Flex Box in css
+6)Isomorphic rendering in react
+7)How React works
+8)Meta Tags in HTML and describe
+9)Promise definition and deep
+10)Web Optimisation of a page
+
+How Webpage renders, discuss each step in details like DOM Preparation, and discussed about DOM data structure.
+Answer Question
+CLassical Inheritance and Prototypical Inheritance.
+Answer Question
+Is the JS object-oriented? How? What are the benefits of Object-oriented?
+Answer Question
+What is a pure function and discussed the same in details.
+Answer Question
+Discussed the box model and questions around it.
+Answer Question
+Generic questions of setTimeout with for loops.
+Answer Question
+Write CSS for tooltip without checking syntax.
+
+//////JS QSN ends here /////
+
+Find the length of longest valid parenthesis substring.
+Find the running median of integer stream.
+
