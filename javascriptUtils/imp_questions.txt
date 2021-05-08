@@ -3,3 +3,29 @@
 3/ How to implement Image Caching
 4/ What is Cache Bursting
 5/ Virtual DOM in react
+
+//JS Qsn//
+1)How JS works
+2)How HTML CSS JS works while rendering
+3)Arrow Functions uses and disadvantages
+4)Questions on Virtual DOM and Real DOM in react
+5)Flex Box in css
+6)Isomorphic rendering in react
+7)How React works
+8)Meta Tags in HTML and describe
+9)Promise definition and deep
+10)Web Optimisation of a page
+
+How Webpage renders, discuss each step in details like DOM Preparation, and discussed about DOM data structure.
+Answer Question
+CLassical Inheritance and Prototypical Inheritance.
+Answer Question
+Is the JS object-oriented? How? What are the benefits of Object-oriented?
+Answer Question
+What is a pure function and discussed the same in details.
+Answer Question
+Discussed the box model and questions around it.
+Answer Question
+Generic questions of setTimeout with for loops.
+Answer Question
+Write CSS for tooltip without checking syntax.

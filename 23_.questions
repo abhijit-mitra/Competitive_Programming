@@ -5,7 +5,11 @@ Algo Questions:
 eg.
 arr[] ={1,2,5,8,9,10} , and queries = List<List<Integer>> queries= [[2,5],[3,5]];
 output=list<Integer> =[32,27]
-explanation = for first query add sum from index 2 to 5 and for second query = sum from index 3 to 5
+explanation = for first query add sum from index 2 to 5 and for second query = sum from index 3 to 5 ---> Done
+
+4/ How to find new element in a complete binary tree
+5/ Find the length of longest valid parenthesis substring.
+6/ Find the running median of integer stream.
 
 
 
@@ -26,38 +30,4 @@ Input: N: number of villages.
 Matrix: M[N+1][N+1] where 0 to N-1 indexes represents a village and the Nth index represents a city. M[x][y] = M[y][x] = 1 if there is a road between x and y.
 
 Design a Vehicle Parking System for a mall.
-
-How to find new element in a complete binary tree
-
-
-//JS Qsn//
-1)How JS works
-2)How HTML CSS JS works while rendering
-3)Arrow Functions uses and disadvantages
-4)Questions on Virtual DOM and Real DOM in react
-5)Flex Box in css
-6)Isomorphic rendering in react
-7)How React works
-8)Meta Tags in HTML and describe
-9)Promise definition and deep
-10)Web Optimisation of a page
-
-How Webpage renders, discuss each step in details like DOM Preparation, and discussed about DOM data structure.
-Answer Question
-CLassical Inheritance and Prototypical Inheritance.
-Answer Question
-Is the JS object-oriented? How? What are the benefits of Object-oriented?
-Answer Question
-What is a pure function and discussed the same in details.
-Answer Question
-Discussed the box model and questions around it.
-Answer Question
-Generic questions of setTimeout with for loops.
-Answer Question
-Write CSS for tooltip without checking syntax.
-
-//////JS QSN ends here /////
-
-Find the length of longest valid parenthesis substring.
-Find the running median of integer stream.
 
