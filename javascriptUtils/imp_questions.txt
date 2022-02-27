@@ -15,6 +15,8 @@
 8)Meta Tags in HTML and describe
 9)Promise definition and deep
 10)Web Optimisation of a page
+11) What is super in ES6
+12) Why do we write `class App extends React.Compoent`. What actually this extend keyword does??
 
 How Webpage renders, discuss each step in details like DOM Preparation, and discussed about DOM data structure.
 Answer Question
