@@ -9,5 +9,9 @@ var test5={
 };
 
 test5.setName('Abhijit');
-console.log(test5.name)//Output: '';
-console.log(window.name)//Output: 'Abhijit'
+console.log(test5.name);
+console.log(window.name);
+
+//Output: '';
+
+//Output: 'Abhijit'
