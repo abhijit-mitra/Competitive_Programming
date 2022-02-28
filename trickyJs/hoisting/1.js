@@ -1,2 +1,4 @@
-console.log(x) //undefined;
+console.log(x) 
 var x = 2;
+
+//Output : undefined;
