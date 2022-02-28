@@ -6,5 +6,8 @@ var obj={
 };
 
 var x = obj.getName;
-console.log(x());// window
-console.log(obj.getName());// obj
+console.log(x());
+console.log(obj.getName());
+
+// window
+// obj
