@@ -13,3 +13,6 @@ ReactDOM.flushSync(() => {
 //
 
 8/ How to implement `outsideClick` using react??
+9/ What is virtual dom in react??
+10/ How do react know which element to to update??
+11/ What is batch update in react?? Why react use batch updates??
