@@ -1,0 +1,15 @@
+1/ How can you access previousProp, in functional components??
+2/ How to implement shouldComponentUpdate in functional components?
+3/ What is the difference between `useMemo` and `useCallback`and when to use these??
+4/ Why state updates are asynchronous in react?
+5/ Why do we use super(props) inside React component constructors?
+6/ How to implement pagination on scroll using react?
+7/ How to avoid batch updates in react?? 
+//
+ReactDOM.flushSync(() => {
+  // this setState won't be batched
+  setState(something)
+})
+//
+
+8/ How to implement `outsideClick` using react??
