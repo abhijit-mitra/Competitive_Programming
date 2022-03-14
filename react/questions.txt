@@ -1,10 +1,12 @@
-1/ How can you access previousProp, in functional components??
-2/ How to implement shouldComponentUpdate in functional components?
-3/ What is the difference between `useMemo` and `useCallback`and when to use these??
-4/ Why state updates are asynchronous in react?
-5/ Why do we use super(props) inside React component constructors?
-6/ How to implement pagination on scroll using react?
-7/ How to avoid batch updates in react?? 
+1/ What is vitual dom in react?
+2/ How diffing algorithm works in react ??
+3/ How can you access previousProp, in functional components??
+4/ How to implement shouldComponentUpdate in functional components?
+5/ What is the difference between `useMemo` and `useCallback`and when to use these??
+6/ Why state updates are asynchronous in react?
+7/ Why do we use super(props) inside React component constructors?
+8/ How to implement pagination on scroll using react?
+9/ How to avoid batch updates in react?? 
 //
 ReactDOM.flushSync(() => {
   // this setState won't be batched
@@ -12,7 +14,6 @@ ReactDOM.flushSync(() => {
 })
 //
 
-8/ How to implement `outsideClick` using react??
-9/ What is virtual dom in react??
-10/ How do react know which element to to update??
-11/ What is batch update in react?? Why react use batch updates??
+10/ How to implement `outsideClick` using react??
+11/ How do react know which element to to update??
+12/ What is batch update in react?? Why react use batch updates??
