@@ -1,9 +1,9 @@
-function((){
+(function(){
   var a = b = 1;
 })();
 
-console.log('a', a); 
 console.log('b', b); 
+console.log('a', a); 
 
+//b 1
 //Error: Uncaught ReferenceError: a is not defined
-// 1
