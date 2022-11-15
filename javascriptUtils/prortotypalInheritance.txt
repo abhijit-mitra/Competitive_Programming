@@ -1,0 +1,1 @@
+https://blogs.soumya-jit.tech/blogs/prototype-and-prototypical-inheritance
